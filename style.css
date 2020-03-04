@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+html , body{
+    font-family: "Work Sans", sans-serif;
+
+}
+/* col */
+.col-1 {
+    width: 8.33%;
+}
+.col-8{
+    width: 66.66%;
+}
+.col-12{
+    width:100%;
+}
+.col-4{
+    width: 33.33%;
+}
+.col-3{
+    width: 25%;
+}
+.col-2{
+    width: 16.66%;
+}
+.col-5 {
+    width: 41.66%;
+}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+
+/* style */
+.row{
+    display: table;
+    content: '';
+    clear: both;
+
+}
+.row .col-12 .header{
+    display: block;
+    margin-bottom: 1.4em;
+    width: 100%;
+    height: 1em;
+    background-color: #FFF;
+    z-index: 1;
+}
+.row .col-12 .header .button{
+    border-radius: 50%;
+    background-color: #e74c3c;
+    height: 10em;
+    width: 10em;
+    box-shadow: 0 0 0 1em #FFF;
+    text-align: center;
+    margin: -4em auto;
+    padding: 2em;
+    z-index: 9;
+    display: table-cell;
+    /* margin-top: -4em; */
+    position: fixed;
+    left: 45%;
+    
+}
+.row .col-12 .header .button i{
+    color: #FFF;
+    display: block;
+    font-size: 44px;
+    text-align: center;
+    margin-top: 1.2em;
+}
+.row .col-12 .container{
+    width: 100%;
+    
+}
+.col-12 .container .row{
+    clear: both;
+    content: '';
+    display: table;
+}
+.col-12 .container .row .col-3{
+    float: left;
+    margin: 0em;
+}
+.col-12 .container .row .col-3 .pic{
+    border-radius: 4%;
+    margin: 1em;
+
+}
+.col-12 .container .row .col-3 .pic img{
+    display: block;
+    width: 100%;
+}
+/* .col-12 .container .row .col-3 .pic .clip{
+    clip-path: circle(80% at 50% 50%) ;
+} */
+.col-12 .footer{
+    width: 100%;
+    background-color: #e74c3c;
+    color: #fff;
+    height: 30%;
+    position: relative;
+    bottom: 0;
+
+}
+.footer .row{
+    width: 100%;
+    clear: both;
+    content: '';
+    display: table;
+}
+.col-12 .footer .row .col-8{
+    margin: 0 auto;
+}
+.col-12 .footer .row .col-8 .text{
+    width: 100%;
+}
+.col-12 .footer .row .col-8 .text h3{
+    text-align: center;
+    margin: 3%;
+    font-size: 1.75em;
+    font-weight: 300;
+
+}
+.col-12 .footer .row .col-8 .text p{
+    text-align: center;
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    line-height: 1.5;
+    color: rgba(255, 255, 2555, 0.75);
+    font-size: 11pt;
+}
+/* .col-12 .footer .row .col-8 .col-4 {
+    margin: 0 auto;
+    height: 6%;
+
+} */
+.col-12 .footer .row .col-8 h3{
+    margin-top: 3%;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.col-12 .footer .row .col-8 ul{
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    margin: 0 0 2em 0;
+    display: table;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.col-12 .footer .row .col-8 ul li{
+    list-style-type: none;
+    color:  rgba(255, 255, 255, 0.65);
+    margin-left: 9%;
+    display: inline-block;
+    text-align: center;
+
+
+}
+.col-12 .footer .row .col-8 ul .first{
+    margin-left: 38%;
+}
+
+/* .col-12 .footer .row .col-8 ul li:first-child{
+    margin-left: 3%;
+} */
+.col-12 .footer .row .col-8   ul li span{
+    width: 16%;
+    display: table-cell;
+    
+
+}
+
+.col-12 .footer .row .col-8 p{
+    color: #fff;
+    text-align: center;
+    font-size: 11pt;
+     margin-top: 3em;
+     display: block;
+     margin: 1% auto;
+}
+.col-12 .footer .row .col-8 p a{
+    color: #fff;
+    font-size: 11px;
+    text-decoration-style: solid;
+    font-size: 11pt;
+
+
+}
+/* media guery */
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"]{
+      width: 100%;
+    }
+    
+}
+@media only screen and (max-width: 480px) {
+    .row .col-12 .header{
+        display: none;
+    }
+    .row .col-12 .header .button{
+        height: 8em;
+        width: 8em;
+        text-align: center;
+        display: none;
+       
+    }
+    .col-12 .footer .row .col-8 .text p{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .col-12 .footer .row .col-8 ul .first{
+        margin-left: 30%;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .row .col-12 .header .button{
+        height: 9em;
+        width: 9em;
+        display: table-cell;
+        left: 43%;
+        
+        
+    }
+}
+@media only screen and (width: 1440px){
+    .row .col-12 .header .button{
+       
+        display: table-cell;
+        left: 44%;
+}
+}
+@media only screen and (min-width: 2560px){
+    .row .col-12 .header .button{
+       
+        display: table-cell;
+        left: 47%;
+}
+}
